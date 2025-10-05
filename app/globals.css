@@ -1,0 +1,117 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* ZenAnlity Brand Colors */
+  --primary-blue: #0248F7;    /* Bright Blue */
+  --primary-yellow: #E1FF01;  /* Shiny Yellow */
+  --black: #000000;           /* Pure Black */
+  --white: #FFFFFF;           /* Pure White */
+  
+  /* CSS Variables for Tailwind */
+  --background: var(--white);
+  --foreground: var(--black);
+  --card: var(--white);
+  --card-foreground: var(--black);
+  --popover: var(--white);
+  --popover-foreground: var(--black);
+  --primary: var(--primary-blue);
+  --primary-foreground: var(--white);
+  --secondary: var(--primary-yellow);
+  --secondary-foreground: var(--black);
+  --muted: #f1f5f9;
+  --muted-foreground: #64748b;
+  --accent: var(--primary-yellow);
+  --accent-foreground: var(--black);
+  --destructive: #ef4444;
+  --destructive-foreground: var(--white);
+  --border: #e2e8f0;
+  --input: #e2e8f0;
+  --ring: var(--primary-blue);
+  --radius: 0.5rem;
+}
+
+body {
+  color: var(--white);
+  background: var(--black);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ZenAnlity Logo Styles */
+.zenanlity-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: var(--white);
+}
+
+.zenanlity-logo-symbol {
+  width: 2rem;
+  height: 2rem;
+  background: var(--black);
+  border: 2px solid var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: var(--white);
+  border-radius: 0.25rem;
+}
+
+/* Navigation Styles */
+.navbar {
+  background: var(--black);
+  color: var(--white);
+  padding: 1rem 0;
+  border-bottom: 2px solid var(--primary-blue);
+}
+
+.navbar-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Button Styles with Brand Colors */
+.btn-primary {
+  background: var(--primary-blue);
+  color: var(--white);
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-primary:hover {
+  background: #0238d1;
+  transform: translateY(-1px);
+}
+
+.btn-secondary {
+  background: var(--primary-yellow);
+  color: var(--black);
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-secondary:hover {
+  background: #c7e601;
+  transform: translateY(-1px);
+}
